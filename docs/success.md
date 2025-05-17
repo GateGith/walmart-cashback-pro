@@ -1,5 +1,5 @@
 ---
-title: "Success!"
+title: "Cashback Successfully Claimed!"
 layout: default
 permalink: /success/
 ---
