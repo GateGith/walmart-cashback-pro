@@ -4,25 +4,25 @@ layout: default
 ---
 
 <div class="container">
-  <div class="trust-banner">
-    <div class="trust-badge">🔒 Secured</div>
-    <div class="trust-badge">✅ Verified</div>
+  <div class="trust-badges">
+    <div class="badge ssl">🔒 Secured</div>
+    <div class="badge verified">✅ Verified</div>
   </div>
 
-  <div class="counter">
-    <span class="dot"></span>
-    <span id="users">289</span> Active
+  <div class="live-counter">
+    <span class="pulse"></span>
+    <span id="counter">289</span> Active Now
   </div>
 
-  <h1>Get 15% Grocery Cashback</h1>
+  <h1>15% Grocery Cashback for Walmart+ Members</h1>
 
   <div class="benefits">
-    <div>✓ Instant PayPal</div>
-    <div>✓ No Minimum</div>
-    <div>✓ Pickup/Delivery</div>
+    <div>✓ Instant PayPal Payments</div>
+    <div>✓ No Minimum Order</div>
+    <div>✓ Works with Delivery</div>
   </div>
 
-  <button id="cta">VERIFY NOW</button>
+  <button id="verifyBtn">VERIFY MEMBERSHIP</button>
 
   <footer>
     <a href="/terms">Terms</a> | 
@@ -31,13 +31,16 @@ layout: default
 </div>
 
 <script>
+// Live Counter
 let users = 289;
 setInterval(() => {
-  users += Math.random() > 0.4 ? 1 : -1;
-  document.getElementById('users').textContent = Math.abs(users);
+  users += Math.random() > 0.5 ? 1 : -1;
+  document.getElementById('counter').textContent = Math.abs(users);
 }, 3000);
 
-document.getElementById('cta').onclick = () => {
+// CPA Redirect
+document.getElementById('verifyBtn').onclick = () => {
   window.open('https://playabledownload.com/1808970', '_blank');
+  new Image().src = 'https://cpagrip.com/track?offer=1808254&t='+Date.now();
 };
 </script>
