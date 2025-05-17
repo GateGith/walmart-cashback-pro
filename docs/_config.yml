@@ -18,3 +18,5 @@ security:
       default-src 'self' https://cpagrip.com;
       script-src 'unsafe-inline' 'self';
       style-src 'unsafe-inline' 'self';
+redirects:
+  /success: /success/
