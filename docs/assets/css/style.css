@@ -1,0 +1,39 @@
+.container {
+  padding: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.trust-badge {
+  background: #f0f8ff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 5px;
+}
+
+#cta {
+  background: #0071ce;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.counter {
+  text-align: center;
+  margin: 25px 0;
+  font-size: 18px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ff4444;
+  border-radius: 50%;
+  margin-right: 5px;
+}
