@@ -13,4 +13,4 @@ defaults:
       layout: default
 
 redirects:
-  /success: /success/
+  /verify: /walmart-cashback-pro/verify/
