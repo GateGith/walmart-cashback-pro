@@ -12,11 +12,5 @@ defaults:
     values:
       layout: default
 
-security:
-  headers:
-    Content-Security-Policy: |
-      default-src 'self' https://cpagrip.com;
-      script-src 'unsafe-inline' 'self';
-      style-src 'unsafe-inline' 'self';
 redirects:
   /success: /success/
