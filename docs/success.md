@@ -1,49 +1,59 @@
 ---
-title: "Cashback Successfully Claimed!"
+title: "Cashback Activated!"
 layout: default
 permalink: /success/
 ---
 
 <div class="container">
-  <div class="check">✓</div>
-  <h1>Cashback Activated!</h1>
-  
-  <div class="steps">
-    <div class="step done">Offer Complete</div>
-    <div class="step">Processing</div>
-    <div class="step">PayPal Deposit</div>
+  <div class="checkmark">✓</div>
+  <h1>Your Cashback Is Processing!</h1>
+
+  <div class="status">
+    <div class="step completed">Offer Verified</div>
+    <div class="step">Payment Processing</div>
+    <div class="step">PayPal Transfer</div>
   </div>
 
-  <p>Contact support with ID:<br>
-  <span id="ref">WCB-${Date.now().toString().slice(-6)}</span></p>
+  <div class="support">
+    <p>Contact Support ID:<br>
+    <span id="refID">WCB-${Date.now().toString().slice(-6)}</span></p>
+  </div>
 
   <footer>
-    <a href="/verify">Back</a>
+    <a href="/verify">← Back to Verification</a>
   </footer>
 </div>
 
 <style>
-.check {
-  font-size: 60px;
+.checkmark {
+  font-size: 4em;
   color: #0071ce;
   text-align: center;
   margin: 20px 0;
 }
-.steps {
+
+.status {
   display: flex;
   justify-content: space-between;
   margin: 30px 0;
 }
+
 .step {
-  text-align: center;
   color: #666;
+  text-align: center;
 }
-.done {
+
+.completed {
   color: #0071ce;
   font-weight: bold;
 }
-#ref {
+
+#refID {
   color: #0071ce;
   font-size: 1.2em;
 }
 </style>
+
+<script>
+document.getElementById('refID').textContent = `WCB-${Date.now().toString().slice(-6)}`;
+</script>
