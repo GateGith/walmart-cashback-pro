@@ -1,37 +1,50 @@
+:root {
+  --walmart-blue: #0071ce;
+  --success-green: #2e7d32;
+}
+
 .container {
-  padding: 15px;
+  padding: 20px;
   max-width: 600px;
   margin: 0 auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .trust-badges {
-  text-align: center;
-  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 25px 0;
 }
 
 .badge {
-  display: inline-block;
   padding: 8px 20px;
   border-radius: 20px;
-  margin: 5px;
-  font-size: 0.9em;
+  font-weight: 500;
 }
 
 .ssl {
   background: #e3f2fd;
-  color: #0071ce;
+  border: 1px solid #90caf9;
+  color: var(--walmart-blue);
 }
 
 .verified {
   background: #e8f5e9;
-  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+  color: var(--success-green);
 }
 
-.live-counter {
-  text-align: center;
-  margin: 25px 0;
+#verifyBtn {
+  background: var(--walmart-blue);
+  color: white;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
   font-size: 1.1em;
+  margin: 30px 0;
+  cursor: pointer;
 }
 
 .pulse {
@@ -49,25 +62,12 @@
   100% { transform: scale(1); }
 }
 
-#verifyBtn {
-  background: #0071ce;
-  color: white;
-  width: 100%;
-  padding: 16px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.1em;
-  margin: 25px 0;
-  cursor: pointer;
-}
-
 @media (max-width: 480px) {
   .container {
-    padding: 10px;
+    padding: 15px;
   }
   
   .badge {
     font-size: 0.8em;
-    padding: 6px 15px;
   }
 }
