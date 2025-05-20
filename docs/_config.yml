@@ -1,16 +1,4 @@
-# docs/_config.yml
 title: Walmart Cashback Pro
 baseurl: "/walmart-cashback-pro"
 url: "https://gategith.github.io"
 include: [".nojekyll"]
-
-plugins:
-  - jekyll-seo-tag
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
-
-permalink: pretty
