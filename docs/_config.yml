@@ -1,3 +1,4 @@
+# docs/_config.yml
 title: Walmart Cashback Pro
 baseurl: "/walmart-cashback-pro"
 url: "https://gategith.github.io"
@@ -12,5 +13,4 @@ defaults:
     values:
       layout: default
 
-redirects:
-  /verify: /walmart-cashback-pro/verify/
+permalink: pretty
